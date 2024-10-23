@@ -116,6 +116,32 @@ public class LayoutikController {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //package com.mycompany.sema;
 //
 //import javafx.fxml.FXML;

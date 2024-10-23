@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.sema.LayoutikController">
+    <children>
+        <VBox alignment="CENTER" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <Label text="Obecní Data" />
+                <TextField fx:id="textFieldNazevObce" promptText="Název obce" />
+                <TextField fx:id="textFieldPsc" promptText="PSČ" />
+                <TextField fx:id="textFieldPocetMuzu" promptText="Počet mužů" />
+                <TextField fx:id="textFieldPocetZen" promptText="Počet žen" />
+                <TextField fx:id="textFieldKraj" promptText="Kraj" />
+                <TextField fx:id="textFieldSoubor" promptText="Cesta k souboru" />
+                <TextField fx:id="textFieldPozice" promptText="Pozice" />
+                <TextArea fx:id="textAreaOutput" prefHeight="200.0" prefWidth="200.0" />
+                <Button layoutY="10.0" onAction="#handleAddObec" text="Přidat obec" />
+                <Button onAction="#handleImportData" text="Importovat data" />
+                <Button onAction="#handleZpristupniObec" text="Zpřístupnit obec" />
+                <Button onAction="#handleOdeberObec" text="Odebrat obec" />
+                <Button onAction="#handleZjistiPrumer" text="Zjistit průměr" />
+                <Button onAction="#handleZobrazObce" text="Zobrazit obce" />
+                <Button onAction="#handleZobrazObceNadPrumer" text="Zobrazit obce nad průměr" />
+                <Button onAction="#handleZrusObce" text="Zrušit obce" />
+                <Button onAction="#handleUlozDoSouboru" text="Uložit do souboru" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -46,7 +46,7 @@ public class Obyvatele {
         if (index >= 0 && index < obce.get(enumKraj.VYSOCINA).size()) {
             this.aktualniIndex = index;
         } else {
-            throw new IllegalArgumentException("Neplatn� index: " + index);
+            throw new IllegalArgumentException("Neplatny index: " + index);
         }
     }
 

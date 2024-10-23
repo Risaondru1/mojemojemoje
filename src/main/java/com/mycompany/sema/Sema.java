@@ -3,14 +3,16 @@ package com.mycompany.sema;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class Sema extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/mycompany/sema/layoutik.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("layoutik.fxml"));
+        AnchorPane root = fxmlLoader.load();
+        Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Moje Aplikace");
         primaryStage.show();
@@ -20,6 +22,34 @@ public class Sema extends Application {
         launch(args);
     }
 }
+
+//package com.mycompany.sema;
+//
+//import javafx.application.Application;
+//import javafx.fxml.FXMLLoader;
+//import javafx.scene.Scene;
+//import javafx.stage.Stage;
+//
+//public class Sema extends Application {
+//
+//    
+//    @Override
+//    public void start(Stage primaryStage) throws Exception {
+//        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("layoutik.fxml"));
+//        Scene scene = new Scene(fxmlLoader.load());
+//        primaryStage.setScene(scene);
+//        primaryStage.setTitle("Moje Aplikace");
+//        primaryStage.show();
+//    }
+//
+//    public static void main(String[] args) {
+//        launch(args);
+//    }
+//}
+
+
+
+
 
 
 //
